@@ -1,6 +1,6 @@
 #!/bin/bash
 # Tell Flask which file is the app
-export FLASK_APP=app.py
+export FLASK_APP=main.py
 # Set production environment
 export FLASK_ENV=production
 # Run Flask on host 0.0.0.0 so external servers can access it
