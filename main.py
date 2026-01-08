@@ -20,7 +20,6 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Configure Gemini API
-# genai.configure(api_key="AIzaSyCQnfrUOvMydYAKCilq0nV8mSZ-Ek38jGU")
 genai.configure(api_key=os.environ.get("GENAI_API_KEY"))
 model = genai.GenerativeModel("gemini-3-pro-preview")
 
